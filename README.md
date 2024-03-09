@@ -1,1 +1,3 @@
-# Proyecto-EDya-Movies-
+El proyecto se basa en el desarrollo de una plataforma para una sala de cine, realizando así sus respectivos requisitos, prototipos de alta y baja fidelidad, además de la maquetación web, implementación de CSS. El aplicativo deberá proporcionar información actualizada sobre las películas en cartelera en la sala de cine, su principal objetivo es ayudar a los usuarios a encontrar fácilmente películas que deseen ver y planificar su experiencia cinematográfica de manera conveniente, permitiendo así la búsqueda de películas, la visualización de horarios de funciones, la reserva y compra de boletos, así como la interacción con comentarios y calificaciones de otros usuarios. Además, ofrecerá opciones de personalización y accesibilidad para adaptarse a las necesidades de cada usuario.
+
+Creadores: Natalia Cajiado Castillo y Esteban Marini Viteri
