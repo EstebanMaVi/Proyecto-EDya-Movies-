@@ -1,0 +1,41 @@
+.sala-container {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .seating-map {
+    display: grid;
+    grid-template-columns: repeat(5, 30%); 
+    gap: 10px;
+  }
+  
+  .asiento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+   .estado.ocupado {
+    color: rgb(255, 60, 0); 
+  }
+  .img {
+    margin-bottom: 5px;
+  }
+  
+  .silla {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 30px;
+    height: 30px; 
+  }
+  
+  .silla img {
+    width: 100%; /* Hace que la imagen ocupe todo el espacio del contenedor */
+    height: 100%; /* Hace que la imagen ocupe todo el espacio del contenedor */
+  }
+  

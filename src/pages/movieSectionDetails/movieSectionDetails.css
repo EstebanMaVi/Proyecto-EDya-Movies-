@@ -1,0 +1,128 @@
+.movie-details {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.movie-details img {
+  width: 20%;
+  /* Ajusta el ancho de la imagen */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.movie-details img:hover {
+  transform: scale(1.05);
+}
+
+.movie-details .movie-info {
+  flex: 1;
+  padding: 0 20px;
+  /* Ajusta el espacio entre la imagen y la descripción */
+}
+
+.movie-details h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.movie-details p {
+  color: #666;
+}
+
+.movie-details::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+}
+
+.movie-section {
+  display: flex;
+  background-color: #1d1d1dd8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.imagen-detalle {
+  flex: 1;
+}
+
+.Movieconten-texto {
+  flex: 2;
+  padding-left: 60px;
+  /* Ajusta según sea necesario */
+  padding-right: 80px;
+
+}
+
+/* Estilos para el botón */
+button {
+  margin-top: 20px;
+  /* Espacio entre el texto y el botón */
+  background-color: rgb(155, 0, 0);
+  color: white;
+  /* Color del texto */
+  border: none;
+  /* Eliminar borde */
+  padding: 10px 20px;
+  /* Ajustar espaciado interno */
+  cursor: pointer;
+  /* Cambiar cursor al pasar por encima */
+  width: 250px;
+  /* Ancho del botón */
+  height: 50px;
+  /* Alto del botón */
+}
+
+button:hover {
+  background-color: black;
+  /* Cambiar color de fondo al pasar por encima */
+}
+
+.confiteria-box {
+  display: flex;
+  align-items: center;
+  background-color: rgb(41, 41, 41);
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra interior */
+}
+
+
+.confiteria-box img {
+  width: 200px;
+  /* Ajusta el ancho de la imagen según sea necesario */
+  height: auto;
+  /* Ajusta la altura de la imagen para mantener la proporción */
+  margin-right: 20px;
+  /* Espacio entre la imagen y el texto */
+}
+
+.confiteria-box div {
+  color: white;
+  /* Color del texto */
+}
+
+.confiteria-item {
+  margin-left: 60px;
+  
+
+  /* Ajusta según sea necesario */
+
+}
+
+.confiteria-item img {
+  width: 170px; /* Ajusta el ancho deseado */
+  height: 170px; /* Ajusta la altura automática para mantener la proporción */
+}
+
+.nav-link{
+  font-size: 40px;
+  color: aliceblue;
+}

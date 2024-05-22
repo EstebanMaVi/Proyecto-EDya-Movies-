@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
-import Confiteria from '../../pages/Confiteria/confiteria';
-import Login from '../../pages/login/login';
 
 const Header = () => {
   return (
@@ -13,14 +11,31 @@ const Header = () => {
         <label htmlFor="menu">
           <img src="images/menu.png" className="menu-icon" alt="Menú" />
         </label>
-        <nav className="navbar">
-          <ul>
-            <li><Link to="/">Inicio</Link></li>
-            <li><Link to="/">Nosotros</Link></li>
-            <li><Link to='/Confiteria'>Confiteria</Link></li>
-            <li><Link to="/">Contacto</Link></li>
-            <li><Link to='/Login'>Login</Link></li>
-          </ul>
+        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+          <div className="container-fluid">
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <Link to="/" className="nav-link active" aria-current="page">
+                    Inicio
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/confiteria" className="nav-link">
+                    Confitería
+                  </Link>
+                </li>
+
+                <li className="nav-item">
+                  <Link to="/login" className="nav-link">
+                    Login
+                  </Link>
+                </li>
+
+
+              </ul>
+            </div>
+          </div>
         </nav>
       </div>
 
