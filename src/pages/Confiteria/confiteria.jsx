@@ -25,9 +25,6 @@ const Confiteria = () => {
           <span>$30.400</span>
         </div>
 
-
-
-
         <div className="confiteria-item2">
           <img src="./images/food2.jpg" alt="Hot Dog" />
           <h3>Hot Dog</h3>
@@ -39,7 +36,7 @@ const Confiteria = () => {
           
           <span>$47.909</span>
         </div>
-        {/* Agrega más elementos de comida según sea necesario */}
+        
       </div>
     </div>
   );

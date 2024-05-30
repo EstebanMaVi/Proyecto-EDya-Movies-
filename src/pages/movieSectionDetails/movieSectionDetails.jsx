@@ -7,6 +7,8 @@ import axios from 'axios';
 const MovieDetails = () => {
   const { id } = useParams();
   const [movie, setMovie] = useState(null);
+  const horarios2D = ['12:00', '15:30', '18:45', '21:00'];
+  const horarios3D = ['16:30', '19:45', '21:00'];
 
   useEffect(() => {
     async function fetchMovieDetails() {
@@ -27,7 +29,7 @@ const MovieDetails = () => {
   }
 
   return (
-    <div className='movie-section'>
+    <div className='movie-details'>
       <div className='imagen-detalle'>
         <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
       </div>
@@ -35,46 +37,52 @@ const MovieDetails = () => {
         <h2>{movie.title}</h2>
         <p>{movie.overview}</p>
         
-
         <div className='confiteria-box'>
-
-          
           <div className='confiteria-item'>
             <img src="/images/food3.png" alt="Soda" />
             <div>
-              <p>combo soda</p>
+              <p>Combo soda</p>
               <span>$27.400</span>
             </div>
           </div>
-
           <div className='confiteria-item'>
             <img src="/images/food2.jpg" alt="Hot Dog"  />
             <div>
-              <p>combo perro</p>
+              <p>Combo perro</p>
               <span>$40.400</span>
             </div>
           </div>
-
-
           <div className='confiteria-item'>
             <img src="/images/food1.jpg" alt="Popcorn" />
             <div>
-              <p>combo palomitas</p>
+              <p>Combo palomitas</p>
               <span>$38.400</span>
             </div>
           </div>
-
-          
         </div>
-        <li className="nav-item">
-                  <Link to="/silleteria" className="nav-link">
-                    Silleteria
-                  </Link>
-                </li>
+
+        <div className='horarios-box'>
+          <div>
+            <p>2D</p>
+            <div className='horarios-2d'>
+              {horarios2D.map((time, index) => (
+               
+                 <Link key={index} to="/silleteria" className='horarios-item'>{time}</Link>
+                
+              ))}
+            </div>
+          </div>
+          <div>
+            <p>3D</p>
+            <div className='horarios-3d'>
+              {horarios3D.map((time, index) => (
+                 <Link key={index} to="/silleteria" className='horarios-item'>{time}</Link>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
-     
     </div>
-    
   );
 };
 

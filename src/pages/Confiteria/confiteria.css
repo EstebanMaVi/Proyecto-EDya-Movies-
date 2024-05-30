@@ -9,12 +9,12 @@
 }
 
 .confiteria-item2 {
-  background-color: #202020;
+  background-color: #080808;
+  width: 550px; 
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
- 
+  box-shadow: inset 0 0 15px rgba(68, 67, 67, 0.5); 
 
 }
 
@@ -24,12 +24,6 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
- 
-
-}
-
-.confiteria-item2:hover {
-  transform: translateY(-5px);
 }
 
 .confiteria-item:hover {
@@ -37,63 +31,38 @@
 }
 
 .confiteria-item2 img {
-  width: 100%;
+  padding: 10px;
   border-radius: 5px;
-  width: 500px; /* ajusta el ancho deseado */
-  height: 350px; /* ajusta la altura deseada */
-  object-fit: cover; /* o ajusta a tus necesidades */
+  width: 480px; 
+  height: 350px; 
+  object-fit: cover; 
 }
 
-.confiteria-item img {
-  width: 100%;
-  border-radius: 5px;
-  width: 500px; /* ajusta el ancho deseado */
-  height: 350px; /* ajusta la altura deseada */
-  object-fit: cover; /* o ajusta a tus necesidades */
-}
 
 .confiteria-item2 h4 {
   margin-top: 10px;
   margin-bottom: 10px;
-      color: rgb(211, 211, 211);
+      color: rgb(231, 235, 247);
 }
 
-.confiteria-item h4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-      color: rgb(211, 211, 211);
-}
+
 
 .confiteria-item2 h3 {
   margin-top: 10px;
 
 }
 
-.confiteria-item h3 {
-  margin-top: 10px;
 
-}
-
-.confiteria-item2 p {
-  margin-bottom: 10px;
-  color: rgb(255, 255, 255);
-font-size: 30px;
-}
 
 .confiteria-item p {
   margin-bottom: 10px;
-  color: rgb(255, 255, 255);
+  color: rgb(224, 220, 233);
 font-size: 30px;
 }
 
 .confiteria-item2 span {
   font-weight: bold;
-  color: #ff401f;
+  color: #968b8a;
   font-size: 30PX;
 }
 
-.confiteria-item span {
-  font-weight: bold;
-  color: #ff401f;
-  font-size: 30PX;
-}

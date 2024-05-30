@@ -8,9 +8,6 @@ const Header = () => {
       <div className="menu container">
         <a href="/" className="logo">Movies!</a>
         <input type="checkbox" id="menu" />
-        <label htmlFor="menu">
-          <img src="images/menu.png" className="menu-icon" alt="Menú" />
-        </label>
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
             <div className="collapse navbar-collapse" id="navbarNav">
