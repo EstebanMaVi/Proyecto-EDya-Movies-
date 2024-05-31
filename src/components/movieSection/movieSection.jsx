@@ -14,7 +14,7 @@ const MovieSection = () => {
     try {
       const api_key = 'b003070e684123b936cc7e1680a7ac1e';
       const resp = await axios.get(`https://api.themoviedb.org/3/trending/movie/week?language=es-MX&api_key=${api_key}`);
-      setMovies(resp.data.results.slice(0, 15)); // Mostrar solo 15 películas
+      setMovies(resp.data.results.slice(0, 15));
     } catch (error) {
       console.error('Error fetching data:', error);
     }
@@ -29,7 +29,7 @@ const MovieSection = () => {
             <div className="movie">
               <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
               <h3>{movie.title}</h3>
-              <p>{movie.overview.length > 100 ? movie.overview.substring(0, 100) + '...' : movie.overview}</p> {/* Texto más corto */}
+              <p>{movie.overview.length > 100 ? movie.overview.substring(0, 100) + '...' : movie.overview}</p> 
             </div>
           </Link>
         ))}

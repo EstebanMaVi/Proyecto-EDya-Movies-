@@ -19,7 +19,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/cartelera" element={<div>Cartelera Page</div>} /> {/* Placeholder for Cartelera */}
           <Route exact path="/movie/:id" element={<MovieDetails />} />
-          <Route path="/silleteria" element= {<Silleteria/>} />
+          <Route path="/silleteria/:id" element= {<Silleteria/>} />
         </Routes>
       </div>
     </Router>

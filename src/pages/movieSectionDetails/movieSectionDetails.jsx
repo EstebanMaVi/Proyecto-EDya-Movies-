@@ -36,7 +36,7 @@ const MovieDetails = () => {
       <div className='Movieconten-texto'>
         <h2>{movie.title}</h2>
         <p>{movie.overview}</p>
-        
+
         <div className='confiteria-box'>
           <div className='confiteria-item'>
             <img src="/images/food3.png" alt="Soda" />
@@ -46,7 +46,7 @@ const MovieDetails = () => {
             </div>
           </div>
           <div className='confiteria-item'>
-            <img src="/images/food2.jpg" alt="Hot Dog"  />
+            <img src="/images/food2.jpg" alt="Hot Dog" />
             <div>
               <p>Combo perro</p>
               <span>$40.400</span>
@@ -66,9 +66,13 @@ const MovieDetails = () => {
             <p>2D</p>
             <div className='horarios-2d'>
               {horarios2D.map((time, index) => (
-               
-                 <Link key={index} to="/silleteria" className='horarios-item'>{time}</Link>
-                
+
+                <Link key={index} 
+                to={`/silleteria/${movie.id}`} 
+                className='horarios-item'>
+                {time}
+                </Link>
+
               ))}
             </div>
           </div>
@@ -76,7 +80,12 @@ const MovieDetails = () => {
             <p>3D</p>
             <div className='horarios-3d'>
               {horarios3D.map((time, index) => (
-                 <Link key={index} to="/silleteria" className='horarios-item'>{time}</Link>
+
+                <Link key={index} to={`/silleteria/${movie.id}`} className='horarios-item'>
+                  
+                  {time}
+                </Link>
+
               ))}
             </div>
           </div>

@@ -1,41 +1,88 @@
-.sala-container {
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .seating-map {
-    display: grid;
-    grid-template-columns: repeat(5, 30%); 
-    gap: 10px;
-  }
-  
-  .asiento {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.Silleteria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
 
-   .estado.ocupado {
-    color: rgb(255, 60, 0); 
-  }
-  .img {
-    margin-bottom: 5px;
-  }
-  
-  .silla {
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    width: 30px;
-    height: 30px; 
-  }
-  
-  .silla img {
-    width: 100%; /* Hace que la imagen ocupe todo el espacio del contenedor */
-    height: 100%; /* Hace que la imagen ocupe todo el espacio del contenedor */
-  }
-  
+h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.movie-info {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.movie-info p{
+  margin-top: 15px;
+}
+
+.movie-info img {
+  max-width: 100%;
+}
+
+.seat-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgb(8, 8, 8);
+  box-shadow: inset 0 0 15px rgba(37, 37, 37, 0.5); 
+  border-radius: 20px;
+  width: 600px;
+  height: 450px;
+}
+
+.seats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.seat-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.seat {
+  width: 35px;
+  height: 35px;
+  margin: 3px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.seat.selected {
+  background-color: rgb(168, 170, 173);
+  color: #fff;
+}
+
+.seat-placeholder {
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+  background-color: transparent;
+  border: none;
+}
+
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 1px solid #dbcbcb;
+  border: none;
+  cursor: pointer;
+}
