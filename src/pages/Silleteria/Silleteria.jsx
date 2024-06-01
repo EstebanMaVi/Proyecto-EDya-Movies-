@@ -52,34 +52,49 @@ const Silleteria = () => {
         <p>{movie.overview}</p>
       </div>
 
-      <div className='info'>
-          <p>Ocupados</p>
-          <p>Disponible</p>
-          <p>Reservado</p>
-      </div>
-      <div className="seat-selection">
-        <h3>Pantalla</h3>
-        <div className="seats">
-          {seatLayout.map((row, rowIndex) => (
-            <div className="seat-row" key={rowIndex}>
-              {row.map((seat, seatIndex) => (
-                seat ? (
-                  <button
-                    key={seat}
-                    className={`seat ${selectedSeats.includes(seat) ? 'selected' : ''}`}
-                    onClick={() => toggleSeatSelection(seat)}
-                  />
-                ) : (
-                  <div key={seatIndex} className="seat-placeholder" />
-                )
+      <div className="apartado1">
+        <div className="seat-info">
+          <div className="info">
+            <div className="info-item">
+              <span className="circle selected"></span>
+              <p>Seleccionado</p>
+            </div>
+            <div className="info-item">
+              <span className="circle available"></span>
+              <p>Disponible</p>
+            </div>
+            <div className="info-item">
+              <span className="circle preselected"></span>
+              <p>Reservado</p>
+            </div>
+          </div>
+          <div className="seat-selection">
+            <h3>Pantalla</h3>
+            <div className="seats">
+              {seatLayout.map((row, rowIndex) => (
+                <div className="seat-row" key={rowIndex}>
+                  {row.map((seat, seatIndex) => (
+                    seat ? (
+                      <button
+                        key={seat}
+                        className={`seat ${selectedSeats.includes(seat) ? 'selected' : ''} ${preSelectedSeats.includes(seat) ? 'preselected' : ''}`}
+                        onClick={() => toggleSeatSelection(seat)}
+                      />
+                    ) : (
+                      <div key={seatIndex} className="seat-placeholder" />
+                    )
+                  ))}
+                </div>
               ))}
             </div>
-          ))}
+          </div>
+        </div>
+        <div className="add-to-cart-container">
+          <button className="add-to-cart" onClick={() => alert('Added to cart')}>
+            Añadir al carrito
+          </button>
         </div>
       </div>
-      <button className="add-to-cart" onClick={() => alert('Added to cart')}>
-        Añadir al carrito
-      </button>
     </div>
   );
 };
