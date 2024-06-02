@@ -12,14 +12,22 @@ const Header = () => {
           <div className="container-fluid">
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
+
                 <li className="nav-item">
                   <Link to="/" className="nav-link active" aria-current="page">
                     Inicio
                   </Link>
                 </li>
+
                 <li className="nav-item">
                   <Link to="/confiteria" className="nav-link">
                     Confitería
+                  </Link>
+                </li>
+
+                <li className="nav-item">
+                  <Link to="/Nosotros" className="nav-link">
+                    Nosotros
                   </Link>
                 </li>
 
@@ -28,6 +36,8 @@ const Header = () => {
                     Login
                   </Link>
                 </li>
+
+                
 
 
               </ul>

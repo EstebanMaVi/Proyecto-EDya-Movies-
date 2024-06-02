@@ -142,3 +142,17 @@ button:hover {
   font-size: 40px;
   color: aliceblue;
 }
+
+.show-more-button {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.show-more-button:hover {
+  background-color: #1c86ee;
+}

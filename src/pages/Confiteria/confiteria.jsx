@@ -35,6 +35,37 @@ const Confiteria = () => {
 
           
           <span>$47.909</span>
+
+          
+        </div>
+
+        <div className="confiteria-item2">
+          <img src="./images/hamburguesa.jpg" alt="Hamburguesa" />
+          <h3>Hamburguesa</h3>
+          <p>Deliciosa hamburguesa</p>
+          <h4>Disfruta de una jugosa hamburguesa acompañada de crujientes papas fritas. El combo perfecto para una experiencia de sabor inigualable.</h4>
+
+          <span>$45.990</span>
+        </div>
+        <div className="confiteria-item2">
+          <img src="/images/malteada.jpg" alt="Malteada" />
+          <h3>Malteada</h3>
+          <p>Malteada de chocolate</p>
+          <h4>Disfruta de una deliciosa y refrescante malteada de chocolate, el acompañamiento perfecto para cualquier snack.</h4>
+          <span>$20.300</span>
+        </div>
+
+        <div className="confiteria-item2">
+          <img src="./images/nachos.jpg" alt="Hot Dog" />
+          <h3>Nachos</h3>
+          <p>Nachos con guacamole.</p>
+
+          <h4>Disfruta de crujientes nachos acompañados de guacamole fresco. ¡El snack perfecto para tu experiencia cinematográfica </h4>
+
+          
+          <span>$32.100</span>
+
+          
         </div>
         
       </div>

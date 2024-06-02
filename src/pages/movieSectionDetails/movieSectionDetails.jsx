@@ -59,6 +59,10 @@ const MovieDetails = () => {
               <span>$38.400</span>
             </div>
           </div>
+          
+          
+
+
         </div>
 
         <div className='horarios-box'>

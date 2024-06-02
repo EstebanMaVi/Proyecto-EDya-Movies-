@@ -4,8 +4,18 @@
 
 .confiteria-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+
+.confiteria-item {
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.confiteria-item:hover {
+  transform: translateY(-5px);
 }
 
 .confiteria-item2 {
@@ -18,51 +28,37 @@
 
 }
 
-.confiteria-item {
-  background-color: #202020;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.confiteria-item:hover {
-  transform: translateY(-5px);
-}
-
 .confiteria-item2 img {
   padding: 10px;
   border-radius: 5px;
-  width: 480px; 
+  width: 100%; 
   height: 350px; 
   object-fit: cover; 
 }
 
-
 .confiteria-item2 h4 {
   margin-top: 10px;
   margin-bottom: 10px;
-      color: rgb(231, 235, 247);
+  color: rgb(231, 235, 247);
 }
-
-
 
 .confiteria-item2 h3 {
   margin-top: 10px;
-
+  color: white;
 }
 
-
-
-.confiteria-item p {
+.confiteria-item2 p {
   margin-bottom: 10px;
   color: rgb(224, 220, 233);
-font-size: 30px;
+  font-size: 30px;
 }
 
 .confiteria-item2 span {
   font-weight: bold;
   color: #968b8a;
-  font-size: 30PX;
+  font-size: 30px;
 }
 
+.confiteria-item2:hover {
+  transform: translateY(-5px);
+}

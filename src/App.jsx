@@ -6,6 +6,7 @@ import Confiteria from './pages/Confiteria/confiteria';
 import Login from './pages/login/login';
 import MovieDetails from './pages/movieSectionDetails/movieSectionDetails';
 import Silleteria from './pages/Silleteria/Silleteria';
+import Nosotros from './pages/Nosotros/Nosotros';
 import './App.css';
 
 const App = () => {
@@ -17,9 +18,11 @@ const App = () => {
           <Route path="/" element={<MovieSection />} />
           <Route path="/confiteria" element={<Confiteria />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/cartelera" element={<div>Cartelera Page</div>} /> {/* Placeholder for Cartelera */}
+          <Route path="/cartelera" element={<div>Cartelera Page</div>} /> 
           <Route exact path="/movie/:id" element={<MovieDetails />} />
           <Route path="/silleteria/:id" element= {<Silleteria/>} />
+          <Route path="/Nosotros" element={<Nosotros />} />
+          
         </Routes>
       </div>
     </Router>
