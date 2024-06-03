@@ -1,0 +1,94 @@
+
+
+
+.selectcontainer {
+    width: 300px; /* ancho del contenedor del select */
+    margin: 20px auto; /* margen superior e inferior de 20px y centrado horizontalmente */
+    padding: 10px; /* padding interior del contenedor */
+    border-radius: 5px; /* esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra leve */
+  }
+  
+  .selectcontainer select {
+    width: 100%; /* ancho del select igual al ancho del contenedor */
+    height: 40px; /* alto del select */
+    padding: 10px; /* padding interior del select */
+    font-size: 16px; /* tamaño de fuente */
+    border: none; /* no borde */
+    border-radius: 5px; /* esquinas redondeadas */
+    background-color: #f9f9f9; /* fondo blanco */
+    color: #333; /* texto negro */
+    cursor: pointer; /* cursor en forma de puntero */
+  }
+  
+  .selectcontainer select option {
+    padding: 10px; /* padding interior de cada opción */
+    font-size: 16px; /* tamaño de fuente */
+    background-color: #f9f9f9; /* fondo blanco */
+    color: #333; /* texto negro */
+  }
+  
+  .selectcontainer select option:hover {
+    background-color: #ccc; /* fondo gris claro al pasar el mouse */
+    color: #666; /* texto gris oscuro al pasar el mouse */
+  }
+  
+  .selectcontainer select option:selected {
+    background-color: #666; /* fondo gris oscuro cuando se selecciona */
+    color: #fff; /* texto blanco cuando se selecciona */
+  }
+
+  .salo{
+    padding-top: 10%;
+  }
+
+  .cinemamap {
+    width: auto;
+    padding: 4%;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #867f7f;
+  }
+  
+  .seatsrow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .seat {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #000000;
+    cursor: pointer;
+  }
+  
+  .seat hover {
+    background-color: #d5d1d1;
+  }
+  
+  .seat selected {
+    background-color: #46cdec;
+  }
+  
+  .seat[reserved] {
+    background-color: #2b4049;
+  }
+  
+  .screen {
+    width: 800px;
+    height: 100px;
+    background-color: #867d7d;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+
+  .imglog{
+
+    height: 400px;
+    width:auto;
+  }

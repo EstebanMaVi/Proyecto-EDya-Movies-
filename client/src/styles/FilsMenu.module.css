@@ -1,0 +1,99 @@
+.boxcontainer1, .boxcontainer2, .boxcontainer3, .boxcontainer4, .boxcontainer5, .boxcontainer6, .boxcontainer7, .boxcontainer8, .boxcontainer9{
+    display: flex;
+    flex-direction: column;
+    background-color: #141414;
+    color: #fff;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 50px
+  }
+  
+  .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #141414;
+    color: #fff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  .title{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .titlePrin{
+    padding-top: 14%;
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .box img {
+    padding-top:30px;
+    width: 250px;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .description{
+    font-size: 1em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .recommend{
+    font-size: 1em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    width: fit-content;
+  }
+  
+  .duration{
+    font-size: 1em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    width: fit-content;
+  }
+
+  .boxcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px auto;
+  }
+  
+  .boxcontainer > div {
+    margin: 10px;
+    width: calc(25% - 20px);
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #141414;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  /* Resto de estilos... */

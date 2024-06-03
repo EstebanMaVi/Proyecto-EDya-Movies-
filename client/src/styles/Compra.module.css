@@ -1,0 +1,20 @@
+.cuerpo{
+    align-items: center;
+}
+
+.titulo {
+    padding-top: 10%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .imga {
+    max-width: 100%;
+    border-radius: 5px;
+    height: auto;
+    width: 1000px;
+  }
+
+  .botona {
+    margin: 30px;
+  }

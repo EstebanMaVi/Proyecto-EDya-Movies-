@@ -1,0 +1,46 @@
+.Navbar {
+    width: 100%; /* Ancho del navbar */
+    position: fixed; /* Fijar el navbar en la parte superior de la página */
+    top: 0; /* Posiciónar el navbar en la parte superior de la página */
+    left: 0; /* Posicionar el navbar a la izquierda de la página */
+    z-index: 1000; /* Asegurarse de que el navbar esté por encima de otros elementos */
+    background-image: url('../assets/img/fondoNavbar.jpg'); /* Agregamos la imagen de fondo */
+    background-size: cover; /* Establecemos que la imagen cubra todo el navbar */
+    display: flex; /* Establecer display flex para centrar elementos */
+    align-items: center; /* Centrar elementos verticalmente */
+    height: 15%; /* Altura del navbar en un 10% del alto de la pantalla */
+    padding: 20px; /* Agregamos padding para que el contenido no se pegue al borde */
+  }
+  
+  .Navbar h1 {
+    margin: 40px; /* Margen del titulo */
+    text-align: left;
+    padding-right: 55%;
+    display: flex; /* Establecemos display flex para alinear la imagen con el título */
+    align-items: center; /* Centrar la imagen y el título verticalmente */
+  }
+  
+  .Navbar h1 img {
+    width: 80px; /* Ancho de la imagen */
+    height: 80px; /* Alto de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el título */
+  }
+  
+  .Navbar a {
+    text-align:right;
+    color: #fff; /* Color de texto de los enlaces */
+    text-decoration: none; /* Quitar subrayado */
+    margin: 0px 10px; /* Espacio entre los links */
+  }
+  
+  .Navbar a:hover {
+    color: #48a09a; /* Color de texto de los enlaces al pasar el mouse */
+  }
+  
+  .Navbar a[href*="register"] {
+    color:#48a09a; /* Color de texto para el link de "Register" */
+  }
+  
+  .Navbar a[href*="register"]:hover {
+    color:#fff; /* Color de texto para el link de "Register" */
+  }

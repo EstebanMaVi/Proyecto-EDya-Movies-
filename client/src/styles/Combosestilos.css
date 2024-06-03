@@ -1,0 +1,116 @@
+/* Reset list styles */
+ul,
+li {
+  list-style: none;
+  white-space: nowrap;
+}
+
+li {
+  display: inline;
+}
+
+/* Image styles */
+img {
+  margin-top: -16px;
+}
+
+/* Main container */
+.main-container {
+  width: 500px;
+  height: 280px;
+  margin: 0 auto;
+}
+
+/* Slider container */
+.slider-container {
+  position: relative;
+  height: 100%;
+  padding-bottom: 15px;
+}
+
+/* Dots carousel */
+.dots-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dot-container-item {
+  margin: 8px 3px;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Arrows */
+.leftArrow,
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.leftArrow {
+  left: 32px;
+}
+
+.rightArrow {
+  right: 32px;
+}
+
+/* Container images */
+.container-images {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 1px solid #eee;
+  overflow: hidden;
+}
+
+/* Active dot */
+div.active {
+  background: #ccc;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+/* Info container */
+.info-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.info-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.info-container p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.info-container button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.info-container button:hover {
+  background-color: #3e8e41;
+}
+
+/* Add this to separate the h1 from the carousel */
+h2 {
+  margin-bottom: 40px; /* adjust the value to your liking */
+}
